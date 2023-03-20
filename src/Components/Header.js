@@ -31,7 +31,7 @@ function Header() {
                             color="inherit"
                             style={{ fontSize: "1rem" }}
                         >
-                            <i class="fas fa-cloud-download-alt"> DOWNLOAD CV</i>
+                            <i className="fas fa-cloud-download-alt"> DOWNLOAD CV</i>
                         </Button>
                     </Typography>
                     <Hidden mdUp>
