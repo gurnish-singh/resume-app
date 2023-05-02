@@ -2,8 +2,8 @@
   "main": {
     "name":"Gurnish Singh",
     "description":"I am a web development engineer and I use react and vue.js to develop pages. This project is a resume template that can be used as the project home page or resume page",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "bio":"Hi, I'm Gurnish Singh, a software developer at Samsung SDS. I am a pro level software test certified professional with a deep passion for software development, web development, and cloud technologies. I'm always looking for ways to innovate and improve in these areas.\n\nOver the years, I have developed a strong expertise in programming languages like Java, C++ and JavaScript, as well as software architecture. I have been fortunate enough to work on a number of exciting projects that have allowed me to push the boundaries of what's possible in the tech industry.\n\n I have had the opportunity to mentor more than 30 new developers who have joined my current company, and it has been incredibly rewarding to watch them develop their skills and become valuable contributors to the company.\n\n I always strive to foster a positive and productive work environment. Whether I'm leading a project or working as part of a team, I'm always looking for ways to ensure that everyone is working towards a common goal.\n\nWhen I'm not developing software or mentoring new developers, I like to stay active and healthy. I hit the gym regularly and also enjoy playing badminton with friends.\n\nOverall, I'm a passionate and dedicated software developer who is always striving to be the best I can be.",
+    "contactmessage":"Welcome! I'm excited to connect with you. Whether you have a question, an idea, or just want to chat, feel free to contact me anytime. I'm here to listen, offer support, and provide information whenever possible. Let's start a conversation and see where it takes us! You can reach out to me through this platform or via email/phone (insert your contact information here). Looking forward to hearing from you soon!",
     "email": "gurnish3956@gmail.com",
     "phone": "+91 9877619424",
     "github":"https://github.com/gurnish-singh",
@@ -18,29 +18,24 @@
     "resumeDownload":"http://timbakerdev.com",
     "social":[
       {
-        "name":"facebook",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
-        "className":"fa fa-facebook"
-      },
-      {
         "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
+        "url":"https://twitter.com/SinghGurnish",
+        "className":"fab fa-twitter"
       },
       {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
-        "className":"fa fa-linkedin"
+        "url":"https://www.linkedin.com/in/gurnish-singh/",
+        "className":"fab fa-linkedin"
       },
       {
         "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
-        "className":"fa fa-instagram"
+        "url":"https://www.instagram.com/gurnishsingh7/",
+        "className":"fab fa-instagram"
       },
       {
         "name":"github",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
-        "className":"fa fa-github"
+        "url":"https://github.com/gurnish-singh",
+        "className":"fab fa-github"
       }
     ]
   },
@@ -48,16 +43,10 @@
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2017",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      },
-      {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2013",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Thapar Institute of Engineering anf Technology",
+        "degree":"Bachelors in Electronics and Computer Science CGPA:8.43",
+        "graduated":"June 2021",
+        "description":"I pursued computer science engineering at Thapar Institute of Engineering and Technology, where I gained confidence in complex programming languages and data structures. Throughout my degree, I worked on various projects, both individually and in groups, which helped me apply my knowledge in real-world situations. Graduating with honors, I landed a job as a software engineer at a top tech company, grateful for the education and experiences that prepared me for the challenges and opportunities ahead."
       }
     ],
     "work":[
@@ -72,112 +61,6 @@
         "title":"Junior bug fixer",
         "years":"March 2017 - February 2018",
         "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
-      }
-    ],
-    "skills":[
-      {
-        "name":"Python",
-        "level":"60%"
-      },
-      {
-        "name":"VueJs",
-        "level":"55%"
-      },
-      {
-        "name":"ReactJs",
-        "level":"50%"
-      },
-      {
-        "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"PHP",
-        "level":"80%"
-      },
-      {
-        "name":"Swift",
-        "level":"50%"
-      },
-      {
-        "name":"JAVA",
-        "level":"80%"
-      }
-    ]
-  },
-  "portfolio":{
-    "projects": [
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"01.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
-      },
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"01.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
-      },
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
       }
     ]
   }

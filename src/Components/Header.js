@@ -29,9 +29,9 @@ function Header() {
                     >
                         <Button
                             color="inherit"
-                            style={{ fontSize: "1rem" }}
+                            style={{ fontSize: "2rem" }}
                         >
-                            <i className="fas fa-cloud-download-alt"> DOWNLOAD CV</i>
+                            <i className="fas fa-cloud-download-alt"> Gurnish Singh</i>
                         </Button>
                     </Typography>
                     <Hidden mdUp>
@@ -43,28 +43,29 @@ function Header() {
                         <Button
                             href="#about"
                             color="inherit"
-                            style={{ fontSize: "1rem" }}
+                            style={{ fontSize: "2rem" }}
                         >
                             About
                         </Button>
-                        <Button
-                            href="#experience"
-                            color="inherit"
-                            style={{ fontSize: "1rem" }}
-                        >
-                            Experience
-                        </Button>
+
                         <Button
                             href="#education"
                             color="inherit"
-                            style={{ fontSize: "1rem" }}
+                            style={{ fontSize: "2rem" }}
                         >
                             Education
                         </Button>
                         <Button
+                            href="#experience"
+                            color="inherit"
+                            style={{ fontSize: "2rem" }}
+                        >
+                            Experience
+                        </Button>
+                        <Button
                             href="#skills"
                             color="inherit"
-                            style={{ fontSize: "1rem" }}
+                            style={{ fontSize: "2rem" }}
                         >
                             Skills
                         </Button>
@@ -72,9 +73,16 @@ function Header() {
                         <Button
                             href="#achievements"
                             color="inherit"
-                            style={{ fontSize: "1rem" }}
+                            style={{ fontSize: "2rem" }}
                         >
                             Achievements
+                        </Button>
+                        <Button
+                            href="#contact"
+                            color="inherit"
+                            style={{ fontSize: "2rem" }}
+                        >
+                            Contact
                         </Button>
                     </Hidden>
                 </Toolbar>
@@ -93,10 +101,11 @@ function Header() {
                             <List>
                                 {[
                                     "about",
-                                    "experience",
                                     "education",
+                                    "experience",
                                     "skills",
-                                    "achievements"
+                                    "achievements" ,
+                                    "contact"
                                 ].map((text, index) => (
                                     <ListItem button key={index} className="menu_btn">
                                         <Button >
