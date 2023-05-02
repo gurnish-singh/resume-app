@@ -49,33 +49,25 @@ function Header() {
                         </Button>
 
                         <Button
-                            href="#education"
+                            href="#resume"
                             color="inherit"
                             style={{ fontSize: "2rem" }}
                         >
                             Education
                         </Button>
                         <Button
-                            href="#experience"
+                            href="#resume"
                             color="inherit"
                             style={{ fontSize: "2rem" }}
                         >
                             Experience
                         </Button>
                         <Button
-                            href="#skills"
+                            href="#resume"
                             color="inherit"
                             style={{ fontSize: "2rem" }}
                         >
                             Skills
-                        </Button>
-
-                        <Button
-                            href="#achievements"
-                            color="inherit"
-                            style={{ fontSize: "2rem" }}
-                        >
-                            Achievements
                         </Button>
                         <Button
                             href="#contact"

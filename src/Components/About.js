@@ -26,22 +26,6 @@ function About(props) {
                     <h2>About Me</h2>
                     <p style={{whiteSpace: 'pre-line'}}>{bio}</p>
                     <div className="row">
-                        <div className="columns contact-details">
-                            <h2>Contact Details</h2>
-                            <p className="address">
-                                <span>{name}</span>
-                                <br/>
-                                <span>
-                      {street}
-                                    <br/>
-                                    {city} {state}, {zip}
-                    </span>
-                                <br/>
-                                <span>{phone}</span>
-                                <br/>
-                                <span>{email}</span>
-                            </p>
-                        </div>
                         <div className="columns download">
                             <p>
                                 <a href={resumeDownload} className="button">
