@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/resume-app/static/css/main.073c9b0a.css",
-    "main.js": "/resume-app/static/js/main.95a9d03d.js",
-    "static/js/787.ec610b0e.chunk.js": "/resume-app/static/js/787.ec610b0e.chunk.js",
-    "static/media/to-do-list.png": "/resume-app/static/media/to-do-list.83b45f8f6278a55793e5.png",
-    "static/media/user.png": "/resume-app/static/media/user.a6143582309785dca610.png",
-    "index.html": "/resume-app/index.html",
-    "main.073c9b0a.css.map": "/resume-app/static/css/main.073c9b0a.css.map",
-    "main.95a9d03d.js.map": "/resume-app/static/js/main.95a9d03d.js.map",
-    "787.ec610b0e.chunk.js.map": "/resume-app/static/js/787.ec610b0e.chunk.js.map"
+    "main.css": "/static/css/main.dc3b8118.css",
+    "main.js": "/static/js/main.1b7a5a1c.js",
+    "static/js/787.ec610b0e.chunk.js": "/static/js/787.ec610b0e.chunk.js",
+    "static/media/gurnish.jpg": "/static/media/gurnish.fbc559ddada858ce0554.jpg",
+    "static/media/to-do-list.png": "/static/media/to-do-list.83b45f8f6278a55793e5.png",
+    "index.html": "/index.html",
+    "main.dc3b8118.css.map": "/static/css/main.dc3b8118.css.map",
+    "main.1b7a5a1c.js.map": "/static/js/main.1b7a5a1c.js.map",
+    "787.ec610b0e.chunk.js.map": "/static/js/787.ec610b0e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.95a9d03d.js"
+    "static/css/main.dc3b8118.css",
+    "static/js/main.1b7a5a1c.js"
   ]
 }
