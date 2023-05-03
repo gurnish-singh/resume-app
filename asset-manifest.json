@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/resume-app/static/css/main.50886773.css",
-    "main.js": "/resume-app/static/js/main.a3f30357.js",
+    "main.css": "/resume-app/static/css/main.dc3b8118.css",
+    "main.js": "/resume-app/static/js/main.85a361b2.js",
     "static/js/787.ec610b0e.chunk.js": "/resume-app/static/js/787.ec610b0e.chunk.js",
     "static/media/gurnish.jpg": "/resume-app/static/media/gurnish.438aec253a0097208982.jpg",
+    "static/media/Samsung_Logo.svg": "/resume-app/static/media/Samsung_Logo.5a7bfbaf2ab1c4b91773103c7c6e57f6.svg",
     "index.html": "/resume-app/index.html",
-    "main.50886773.css.map": "/resume-app/static/css/main.50886773.css.map",
-    "main.a3f30357.js.map": "/resume-app/static/js/main.a3f30357.js.map",
+    "main.dc3b8118.css.map": "/resume-app/static/css/main.dc3b8118.css.map",
+    "main.85a361b2.js.map": "/resume-app/static/js/main.85a361b2.js.map",
     "787.ec610b0e.chunk.js.map": "/resume-app/static/js/787.ec610b0e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50886773.css",
-    "static/js/main.a3f30357.js"
+    "static/css/main.dc3b8118.css",
+    "static/js/main.85a361b2.js"
   ]
 }
