@@ -15,8 +15,6 @@ function Footer(props) {
             <footer>
                 <div className="row">
                         <div className="twelve columns">
-                            <ul className="social-links">{networks}</ul>
-
                             <ul className="copyright">
                                 <li>&copy; Copyright 2023 Gurnish Singh</li>
                                 <li>

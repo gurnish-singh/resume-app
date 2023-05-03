@@ -10,7 +10,15 @@ function Contact(props) {
     const zip = props.resumeData.address.zip;
     const phone = props.resumeData.phone;
     const message = props.resumeData.contactmessage;
-
+    const networks = props.resumeData.social.map(function (network) {
+        return (
+            <li key={network.name}>
+                <a href={network.url}>
+                    <i className={network.className}></i>
+                </a>
+            </li>
+        );
+    });
     return (
         <section id="contact">
             <div className="row section-head">
@@ -21,6 +29,13 @@ function Contact(props) {
                     <p className="lead">{message}</p>
                 </div>
             </div>
+            <footer>
+            <div className="row">
+                <div className="twelve columns">
+                    <ul className="social-links">{networks}</ul>
+                </div>
+            </div>
+            </footer>
         </section>
     );
 }
