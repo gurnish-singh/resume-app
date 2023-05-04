@@ -18,60 +18,50 @@ function Header() {
     return(
         <Fragment>
             <AppBar
-                className="header-color"
                 position="static"
+                style={{background: "#191919"}}
             >
                 <Toolbar>
                     <Typography
                         variant="subtitle"
-                        color="inherit"
-                        style={{ flexGrow: 1 }}
+                        style={{ flexGrow: 1 ,fontSize:"30px"}}
                     >
-                        <Button
-                            color="inherit"
-                            style={{ fontSize: "2rem" }}
-                        >
-                            <i className="fas fa-cloud-download-alt"> Gurnish Singh</i>
-                        </Button>
+                       Gurnish Singh
                     </Typography>
                     <Hidden mdUp>
-                        <IconButton color="inherit" >
+                        <IconButton  >
                             <MenuIcon />
                         </IconButton>
                     </Hidden>
                     <Hidden smDown>
                         <Button
                             href="#about"
-                            color="inherit"
                             style={{ fontSize: "2rem" }}
                         >
                             About
                         </Button>
 
                         <Button
-                            href="#resume"
-                            color="inherit"
+                            href="#education"
                             style={{ fontSize: "2rem" }}
                         >
                             Education
                         </Button>
                         <Button
-                            href="#resume"
-                            color="inherit"
-                            style={{ fontSize: "2rem" }}
-                        >
-                            Experience
-                        </Button>
-                        <Button
-                            href="#resume"
-                            color="inherit"
+                            href="#skills"
                             style={{ fontSize: "2rem" }}
                         >
                             Skills
                         </Button>
                         <Button
+                            href="#experience"
+                            style={{ fontSize: "2rem" }}
+                        >
+                            Experience
+                        </Button>
+
+                        <Button
                             href="#contact"
-                            color="inherit"
                             style={{ fontSize: "2rem" }}
                         >
                             Contact

@@ -3,51 +3,10 @@ import React from "react";
 import {Paper,
     Tooltip, Zoom
 } from "@mui/material/";
-import {ReactComponent as SamsungLogo} from '../assets/images/Samsung_Logo.svg';
 
-function Resume(props) {
-    if (!props.resumeData) return null;
-    const education = props.resumeData.education.map(function (education) {
-        return (
-            <div key={education.school}>
-                <h3>{education.school}</h3>
-                <p className="info">
-                    {education.degree} <span>&bull;</span>
-                    <em className="date">{education.graduated}</em>
-                </p>
-                <p>{education.description}</p>
-            </div>
-        );
-    });
-
-    const work = props.resumeData.work.map(function (work) {
-        return (
-            <div key={work.company}>
-                <h3>{work.company}</h3>
-                <p className="info">
-                    {work.title}
-                    <span>&bull;</span> <em className="date">{work.years}</em>
-                </p>
-                <p>{work.description}</p>
-            </div>
-        );
-    });
+function Skills(props) {
     return (
-        <section id="resume">
-            <div className="row education">
-                <div className="three columns header-col">
-                    <h1>
-                        <span>Education</span>
-                    </h1>
-                </div>
-
-                <div className="nine columns main-col">
-                    <div className="row item">
-                        <div className="twelve columns">{education}</div>
-                    </div>
-                </div>
-            </div>
-            <div className="row work">
+            <div id="skills" className="row work">
                 <div className="three columns header-col">
                     <h1>
                         <span>Skills</span>
@@ -136,36 +95,7 @@ function Resume(props) {
 
                 </div>
             </div>
-            <div className="row work">
-                <div className="three columns header-col">
-                    <h1>
-                        <span>Experience</span>
-                    </h1>
-                </div>
-
-                <div className="nine columns main-col">
-                    <div className="row">
-                        <div>
-                            <p>
-                                <Tooltip
-                                    TransitionComponent={Zoom}
-                                    title="Senior Executive (Samsung SDS)"
-                                    data-aos="zoom-out-left"
-                                    data-aos-duration="3000"
-                                >
-                                   <SamsungLogo styele={{width: "200px",height:"200px"}}/>
-                                </Tooltip>
-
-                            </p>
-                            <div className="twelve columns">{work}</div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
     );
 }
 
-export default Resume;
+export default Skills;
