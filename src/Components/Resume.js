@@ -47,16 +47,6 @@ function Resume(props) {
                     </div>
                 </div>
             </div>
-
-            <div className="row work">
-                <div className="three columns header-col">
-                    <h1>
-                        <span>Work</span>
-                    </h1>
-                </div>
-
-                <div className="nine columns main-col">{work}</div>
-            </div>
             <div className="row work">
                 <div className="three columns header-col">
                     <h1>
@@ -64,7 +54,7 @@ function Resume(props) {
                     </h1>
                 </div>
 
-                <div className="15 columns main-col">
+                <div className="nine columns main-col">
                     <div className="row">
                         <div>
                             <p>
@@ -90,7 +80,7 @@ function Resume(props) {
                                     TransitionComponent={Zoom}
                                     title="REACTJS"
                                 >
-                                    <i className="fab fa-react fa-3x" aria-hidden="true"/>
+                                    <i className="fa fa-react fa-3x" aria-hidden="true"/>
                                 </Tooltip>
                                 <Tooltip
                                     TransitionComponent={Zoom}
@@ -104,6 +94,12 @@ function Resume(props) {
                                 >
                                     <i className="fab fa-vuejs fa-3x" aria-hidden="true"/>
                                 </Tooltip>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div>
+                            <p>
                                 <Tooltip
                                     TransitionComponent={Zoom}
                                     title="SpringBoot"
@@ -114,11 +110,30 @@ function Resume(props) {
                                     TransitionComponent={Zoom}
                                     title="JAVA"
                                 >
-                                    <i className="fab fa-java fa-3x"style={{color: "#1b71a7",}} aria-hidden="true"/>
+                                    <i className="fa fa-java fa-3x" aria-hidden="true"></i>
+                                </Tooltip>
+                                <Tooltip
+                                    TransitionComponent={Zoom}
+                                    title="Amazon Web Services"
+                                >
+                                    <i className="fab fa-aws fa-3x"style={{color: "#fab42d",}} aria-hidden="true"/>
+                                </Tooltip>
+                                <Tooltip
+                                    TransitionComponent={Zoom}
+                                    title="SQL"
+                                >
+                                    <i className="fa fa-mysql fa-3x" aria-hidden="true"></i>
+                                </Tooltip>
+                                <Tooltip
+                                    TransitionComponent={Zoom}
+                                    title="GIT"
+                                >
+                                    <i className="fab fa-github-square fa-3x"style={{color: "#0c0c0c",}} aria-hidden="true"/>
                                 </Tooltip>
                             </p>
                         </div>
                     </div>
+
                 </div>
             </div>
             <div className="row work">
@@ -142,7 +157,7 @@ function Resume(props) {
                                 </Tooltip>
 
                             </p>
-                            <div className="twelve columns">{education}</div>
+                            <div className="twelve columns">{work}</div>
 
                         </div>
                     </div>
