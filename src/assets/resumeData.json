@@ -15,11 +15,11 @@
       "zip": "148023"
     },
     "website": "http://www.timbakerdev.com",
-    "resumeDownload":"http://google.com",
+    "resumeDownload":"https://drive.google.com/file/d/1TP8hpVsQRz23nDKq-kx4beOTvzNk8jiP/view?usp=sharing",
     "social":[
       {
         "name":"twitter",
-        "url":"https://twitter.com/SinghGurnish",
+        "url":"https://twitter.com/gurnish__singh",
         "className":"fab fa-twitter fa-3x"
       },
       {
@@ -36,6 +36,11 @@
         "name":"github",
         "url":"https://github.com/gurnish-singh",
         "className":"fab fa-github fa-3x"
+      },
+      {
+        "name":"leetcode",
+        "url":"https://leetcode.com/gurnish-singh",
+        "className":"fa-solid fa-code fa-3x"
       }
     ]
   },

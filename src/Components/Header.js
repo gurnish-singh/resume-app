@@ -69,7 +69,6 @@ function Header() {
                     </Hidden>
                 </Toolbar>
             </AppBar>
-
             <Hidden mdUp>
                 <div>
                     <Drawer
