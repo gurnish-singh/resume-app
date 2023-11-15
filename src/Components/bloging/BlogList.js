@@ -9,7 +9,7 @@ const BlogList = ({blogPosts}) => {
         return <p>Loading...</p>;
     }
     return (
-            <Carousel >
+            <Carousel showStatus={true} showThumbs={false} showIndicators={false} >
                 {blogPosts.map((post) => (
                     <div key={post.id} className='center-div' >
                         {/*<Link to={`/blog/${post.id}`}>*/}
