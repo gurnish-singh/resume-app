@@ -7,7 +7,8 @@ const BlogPostCard = styled.div`
   border-radius: 8px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 300px;
+  width: 500px;
+  height: 200px;
 
   img {
     max-width: 100%;
@@ -20,7 +21,7 @@ const BlogPostCard = styled.div`
   }
 
   p {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   a {

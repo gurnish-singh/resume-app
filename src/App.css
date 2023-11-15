@@ -421,3 +421,12 @@ ul li {
   margin: 0 auto; /* This sets the left and right margins to auto, centering the div horizontally */
   width: 28%; /* Adjust the width as needed */
 }
+.blog-list-container {
+  padding: 20px;
+  /* Add any other styles you want for the container */
+}
+
+.blog-list-heading {
+  color: #fff; /* Yellow text color, adjust as needed */
+  /* Add any other styles you want for the heading */
+}
