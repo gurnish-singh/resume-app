@@ -175,7 +175,7 @@ p i {
   opacity: 0.8;
 }
 p i:first-child {
-  color: lightcoral;
+  color: rgba(2, 2, 28, 0.84);
 }
 p i:nth-child(2) {
   color: lightseagreen;

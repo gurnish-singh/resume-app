@@ -1,4 +1,4 @@
-import React, {  Fragment } from "react";
+import React, {Fragment, useState} from "react";
 import {
     AppBar,
     Typography,
@@ -13,93 +13,153 @@ import {
 } from "@mui/material/";
 import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import {ThemeProvider, createTheme} from '@mui/material/styles';
 
 function Header() {
-    return(
-        <Fragment>
-            <AppBar
-                position="static"
-                style={{background: "#191919"}}
-            >
-                <Toolbar>
-                    <Typography
-                        variant="subtitle"
-                        style={{ flexGrow: 1 ,fontSize:"30px"}}
-                    >
-                       Gurnish Singh
-                    </Typography>
-                    <Hidden mdUp>
-                        <IconButton  >
-                            <MenuIcon />
-                        </IconButton>
-                    </Hidden>
-                    <Hidden smDown>
-                        <Button
-                            href="#about"
-                            style={{ fontSize: "2rem" }}
-                        >
-                            About
-                        </Button>
+    const [drawerOpen, setDrawerOpen] = useState(false);
 
-                        <Button
-                            href="#education"
-                            style={{ fontSize: "2rem" }}
-                        >
-                            Education
-                        </Button>
-                        <Button
-                            href="#skills"
-                            style={{ fontSize: "2rem" }}
-                        >
-                            Skills
-                        </Button>
-                        <Button
-                            href="#experience"
-                            style={{ fontSize: "2rem" }}
-                        >
-                            Experience
-                        </Button>
+    const handleDrawerToggle = () => {
+        setDrawerOpen(!drawerOpen);
+    };
 
-                        <Button
-                            href="#contact"
-                            style={{ fontSize: "2rem" }}
+    const handleDrawerItemClick = (sectionId) => {
+        // Close the drawer when an item is clicked
+        setDrawerOpen(false);
+
+        // Scroll to the section with the specified ID
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({behavior: "smooth"});
+        }
+    };
+    const theme = createTheme({
+        components: {
+            MuiDrawer: {
+                styleOverrides: {
+                    paperAnchorTop: {
+                        backgroundColor: 'black', // Set the background color to black
+                    },
+                },
+            },
+        },
+    });
+    return (
+        <ThemeProvider theme={theme}>
+            <Fragment>
+                <AppBar
+                    position="static"
+                    style={{background: "#191919"}}
+                >
+                    <Toolbar>
+                        <Typography
+                            variant="subtitle"
+                            style={{flexGrow: 1, fontSize: "30px"}}
                         >
-                            Contact
-                        </Button>
-                    </Hidden>
-                </Toolbar>
-            </AppBar>
-            <Hidden mdUp>
-                <div>
-                    <Drawer
-                        anchor="top"
-                        style={{ color: "yellow" }}
-                    >
-                        <div >
-                            <IconButton >
-                                <KeyboardArrowUpIcon />
+                            Gurnish Singh
+                        </Typography>
+                        <Hidden mdUp>
+                            <IconButton style={{color: "#ffffff"}} onClick={handleDrawerToggle}>
+                                <MenuIcon/>
                             </IconButton>
-                            <List>
-                                {[
-                                    "about",
-                                    "education",
-                                    "experience",
-                                    "skills",
-                                    "achievements" ,
-                                    "contact"
-                                ].map((text, index) => (
-                                    <ListItem button key={index} className="menu_btn">
-                                        <Button >
-                                            <ListItemText primary={text} />
-                                        </Button>
-                                    </ListItem>
-                                ))}
-                            </List>
-                        </div>
-                    </Drawer>
-                </div>
-            </Hidden>
-        </Fragment>
+                        </Hidden>
+                        <Hidden smDown>
+                            <Button
+                                sx={{
+                                    color: '#525252',
+                                }}
+                                style={{fontSize: "2rem"}}
+                                onClick={() => handleDrawerItemClick('about')}
+                            >
+                                About
+                            </Button>
+                            <Button
+                                sx={{
+                                    color: '#525252',
+                                }}
+                                style={{fontSize: "2rem"}}
+                                onClick={() => handleDrawerItemClick('education')}
+                            >
+                                Education
+                            </Button>
+                            <Button
+                                sx={{
+                                    color: '#525252',
+                                }}
+                                style={{fontSize: "2rem"}}
+                                onClick={() => handleDrawerItemClick('skills')}
+                            >
+                                Skills
+                            </Button>
+                            <Button
+                                sx={{
+                                    color: '#525252',
+                                }}
+                                style={{fontSize: "2rem"}}
+                                onClick={() => handleDrawerItemClick('experience')}
+                            >
+                                Experience
+                            </Button>
+                            <Button
+                                sx={{
+                                    color: '#525252',
+                                }}
+                                style={{fontSize: "2rem"}}
+                                onClick={() => handleDrawerItemClick('blog')}
+                            >
+                                Blog
+                            </Button>
+                            <Button
+                                sx={{
+                                    color: '#525252',
+                                }}
+                                style={{fontSize: "2rem"}}
+                                onClick={() => handleDrawerItemClick('contact')}
+                            >
+                                Contact
+                            </Button>
+                        </Hidden>
+                    </Toolbar>
+                </AppBar>
+                <Hidden mdUp>
+                    <div>
+                        <Drawer
+                            anchor="top"
+                            open={drawerOpen}
+                            onClose={handleDrawerToggle}
+                            classes={{
+                                paperAnchorTop: 'customDrawerStyles', // Add your custom class
+                            }}
+                        >
+                            <div>
+                                <IconButton style={{color: "#ffffff"}} onClick={handleDrawerToggle}>
+                                    <KeyboardArrowUpIcon/>
+                                </IconButton>
+                                <List>
+                                    {[
+                                        "about",
+                                        "education",
+                                        "skills",
+                                        "experience",
+                                        "blog",
+                                        "contact"
+                                    ].map((text, index) => (
+                                        <ListItem
+                                            button
+                                            key={index}
+                                            className="menu_btn"
+                                            onClick={() => handleDrawerItemClick(text)}
+                                            style={{fontSize: "2rem", color: "#ffffff"}} // Add your custom styles here
+                                        >
+                                            <ListItemText primary={text}/>
+                                        </ListItem>
+                                    ))}
+                                </List>
+                            </div>
+                        </Drawer>
+                    </div>
+                </Hidden>
+            </Fragment>
+        </ThemeProvider>
     );
 }
 

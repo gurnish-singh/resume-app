@@ -25,11 +25,13 @@ const BlogPage = () => {
 
 
     return (
-        <div className="blog-list-container">
-            <h2 className="blog-list-heading">Latest Blog Posts</h2>
-            {/* Render your blog posts here */}
-            <BlogList blogPosts={blogPosts}/>
-        </div>
+        <section id="blog">
+            <div className="blog-list-container">
+                <h2 className="blog-list-heading">Latest Blog Posts</h2>
+                {/* Render your blog posts here */}
+                <BlogList blogPosts={blogPosts}/>
+            </div>
+        </section>
     );
 };
 

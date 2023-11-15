@@ -29,7 +29,7 @@ function About(props) {
                         <div className="columns download">
                             <p>
                                 <a href={resumeDownload} className="button">
-                                    <i className="fa fa-download"></i>Download Resume
+                                    <i className="fa-solid fa-download" color={'#525252'}></i>Download Resume
                                 </a>
                             </p>
                         </div>
