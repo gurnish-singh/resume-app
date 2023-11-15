@@ -1,13 +1,14 @@
 import './App.css';
 import React, {Fragment} from "react";
-import Header from "./Components/Header";
-import About from "./Components/About";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
+import Header from "./components/Header";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import resumeData from './assets/resumeData.json';
-import Education from "./Components/Education";
-import Skills from "./Components/Skills"
-import Experience from "./Components/Experience";
+import Education from "./components/Education";
+import Skills from "./components/Skills"
+import Experience from "./components/Experience";
+import BlogPage from "./components/bloging/BlogPage";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Skills resumeData={resumeData.resume}/>
                 <Experience resumeData={resumeData.resume}/>
             </section>
+            <BlogPage/>
             <Contact resumeData={resumeData.main}/>
             <Footer resumeData={resumeData.main.social}/>
         </Fragment>

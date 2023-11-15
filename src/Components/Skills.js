@@ -39,7 +39,7 @@ function Skills(props) {
                                     TransitionComponent={Zoom}
                                     title="REACTJS"
                                 >
-                                    <i className="fa fa-react fa-3x" aria-hidden="true"/>
+                                    <i className="fa-brands fa-react fa-3x" aria-hidden="true"/>
                                 </Tooltip>
                                 <Tooltip
                                     TransitionComponent={Zoom}
@@ -69,7 +69,7 @@ function Skills(props) {
                                     TransitionComponent={Zoom}
                                     title="JAVA"
                                 >
-                                    <i className="fa fa-java fa-3x" aria-hidden="true"></i>
+                                    <i className="fa-brands fa-java fa-3x" aria-hidden="true"></i>
                                 </Tooltip>
                                 <Tooltip
                                     TransitionComponent={Zoom}
@@ -81,7 +81,7 @@ function Skills(props) {
                                     TransitionComponent={Zoom}
                                     title="SQL"
                                 >
-                                    <i className="fa fa-mysql fa-3x" aria-hidden="true"></i>
+                                    <i className="fa-solid fa-database fa-3x" aria-hidden="true"></i>
                                 </Tooltip>
                                 <Tooltip
                                     TransitionComponent={Zoom}
