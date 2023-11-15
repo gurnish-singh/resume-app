@@ -417,3 +417,7 @@ ul li {
   width: 50%;
   background-color: yellow;
 }
+.center-div {
+  margin: 0 auto; /* This sets the left and right margins to auto, centering the div horizontally */
+  width: 28%; /* Adjust the width as needed */
+}

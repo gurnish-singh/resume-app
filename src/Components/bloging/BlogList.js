@@ -1,23 +1,23 @@
-// components/BlogList.js
 import React from 'react';
 import BlogPost from './BlogPost';
-// components/BlogList.js
-import styled from 'styled-components';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
-const BlogListContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-`;
-
-const BlogList = ({ blogPosts }) => {
+const BlogList = ({blogPosts}) => {
+    if (!blogPosts || blogPosts.length === 0) {
+        // You can render a loading indicator or a message here
+        return <p>Loading...</p>;
+    }
     return (
-        <BlogListContainer>
-            {blogPosts.map((post) => (
-                <BlogPost key={post.id} post={post} />
-            ))}
-        </BlogListContainer>
+            <Carousel >
+                {blogPosts.map((post) => (
+                    <div key={post.id} className='center-div' >
+                        {/*<Link to={`/blog/${post.id}`}>*/}
+                        <BlogPost post={post}/>
+                        {/*</Link>*/}
+                    </div>
+                ))}
+            </Carousel>
     );
 };
 
